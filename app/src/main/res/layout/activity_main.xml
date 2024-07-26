@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FAF6EC"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="420dp"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/asspic" />
+      <androidx.gridlayout.widget.GridLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          app:columnCount="1"
+          app:rowCount="20">
+
+          <androidx.cardview.widget.CardView
+              android:id="@+id/pp1"
+              android:layout_width="wrap_content"
+              android:layout_height="150dp"
+              android:layout_margin="5dp"
+              android:layout_marginTop="40dp"
+              android:background="#FAF6EC"
+              android:elevation="70dp"
+              app:cardBackgroundColor="#8550E3"
+              app:cardCornerRadius="40dp"
+              app:cardUseCompatPadding="true"
+              app:layout_column="0"
+              app:layout_columnWeight="1"
+              app:layout_gravity="fill"
+              app:layout_row="0"
+              app:layout_rowWeight="1">
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_gravity="center_horizontal|center_vertical"
+                  android:gravity="center"
+                  android:orientation="horizontal"
+
+                  >
+
+                  <ImageView
+                      android:id="@+id/imageView"
+                      android:layout_width="50dp"
+                      android:layout_height="60dp"
+                      android:layout_marginLeft="30dp"
+                      android:src="@drawable/baseline_photo_library_24" />
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="20dp"
+                      android:text="Newly Uploaded Posts"
+
+                      android:textColor="#FDFCFC"
+                      android:textSize="17sp"
+                      android:textStyle="bold" />
+
+              </LinearLayout>
+          </androidx.cardview.widget.CardView>
+
+          <androidx.cardview.widget.CardView
+              android:id="@+id/pp2"
+              android:layout_width="wrap_content"
+              android:layout_height="150dp"
+              android:layout_margin="5dp"
+              android:layout_marginTop="40dp"
+              android:background="#FAF6EC"
+              android:elevation="50dp"
+              app:cardBackgroundColor="#8550E3"
+              app:cardCornerRadius="40dp"
+              app:cardUseCompatPadding="true"
+              app:layout_column="0"
+              app:layout_columnWeight="1"
+              app:layout_gravity="fill"
+              app:layout_row="1"
+              app:layout_rowWeight="1">
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_gravity="center_horizontal|center_vertical"
+                  android:gravity="center"
+                  android:orientation="horizontal"
+
+                  >
+
+                  <ImageView
+                      android:id="@+id/imageView"
+                      android:layout_width="50dp"
+                      android:layout_height="60dp"
+                      android:layout_marginLeft="30dp"
+                      android:src="@drawable/baseline_file_upload_24" />
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="20dp"
+                      android:text="Upload Today Post"
+
+                      android:textColor="#FDFCFC"
+                      android:textSize="17sp"
+                      android:textStyle="bold" />
+
+              </LinearLayout>
+          </androidx.cardview.widget.CardView>
+          <androidx.cardview.widget.CardView
+              android:id="@+id/pp3"
+              android:layout_width="wrap_content"
+              android:layout_height="150dp"
+              android:layout_margin="5dp"
+              android:layout_marginTop="40dp"
+              android:background="#FAF6EC"
+              android:elevation="50dp"
+              app:cardBackgroundColor="#8550E3"
+              app:cardCornerRadius="40dp"
+              app:cardUseCompatPadding="true"
+              app:layout_column="0"
+              app:layout_columnWeight="1"
+              app:layout_gravity="fill"
+              app:layout_row="2"
+              app:layout_rowWeight="1">
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_gravity="center_horizontal|center_vertical"
+                  android:gravity="center"
+                  android:orientation="horizontal"
+
+                  >
+
+                  <ImageView
+                      android:id="@+id/imageView"
+                      android:layout_width="50dp"
+                      android:layout_height="60dp"
+                      android:layout_marginLeft="30dp"
+                      android:src="@drawable/baseline_photo_camera_24" />
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="20dp"
+                      android:text="Take Today Snap"
+
+                      android:textColor="#FDFCFC"
+                      android:textSize="17sp"
+                      android:textStyle="bold" />
+
+              </LinearLayout>
+          </androidx.cardview.widget.CardView>
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="30dp"
+              android:gravity="center"
+
+              android:text="Nottingham trent university"
+              android:textColor="@color/black"
+              android:textSize="14sp"
+               />
+      </androidx.gridlayout.widget.GridLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

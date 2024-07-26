@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8550E3">
+
+    <Button
+        android:id="@+id/capture_button"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:backgroundTint="@color/white"
+        android:layout_centerInParent="true"
+        android:text="Open camera"
+        android:drawableLeft="@drawable/baseline_photo_camera2_24"
+        android:textColor="@color/black"
+        android:textSize="20dp"/>
+
+    <ImageView
+        android:id="@+id/image_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+
+</RelativeLayout>
